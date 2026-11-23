@@ -257,6 +257,13 @@ ggplot(ratio_eval_df, aes(x = x, y = y, color = log_ratio)) +
 
 ![](man/figures/README-test-plot-1.png)<!-- -->
 
+## GPU version of the boosting
+
+The folder `python/` holds `batts_gpu`, a PyTorch port of `boots()` and
+`eval_balance_weight()` that runs on a GPU, with the same arguments and
+defaults. See [python/README.md](python/README.md). The Bayesian
+`batts()` is not ported.
+
 ## Reference
 
 Awaya, N., Xu, Y., and Ma, L. (2025). [Two-sample comparison through
